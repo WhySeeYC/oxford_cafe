@@ -6,7 +6,7 @@ This is a MySQL database build specifically for the independent coffee shops. Th
 2. allow visitors to work out how much they can save on coffee when they bring travel mug themselves. 
 3. For the owner of the coffee shops, they can use the created view to understand how coffee sales had been in the Oxford area.
 
-![ER diagram for the oxford_cafe ](/oxford_cafe/oxford_cafe_ER_diagram.png)
+![ER diagram for the oxford_cafe](/oxford_cafe/oxford_cafe_ER_diagram.png)
 
 ## Special Thanks
 
