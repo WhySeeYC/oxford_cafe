@@ -8,6 +8,13 @@ This is a MySQL database build specifically for the independent coffee shops. Th
 
 ![ER diagram for the oxford_cafe](/oxford_cafe/oxford_cafe_ER_diagram.png)
 
+## Tools for this project
+- MySQL Workbench
+- VS code
+
+## Presentation
+> available at mt YouTbe channel [Presentation](https://youtu.be/JTrJInBJDvg)
+
 ## Special Thanks
 
 Thanks Code First Girl and the fellow girls who join me in this journey learning MySQL on the side. This project allow me to put the knowledge learned during the course in practice. 
