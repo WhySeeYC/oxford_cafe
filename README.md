@@ -13,7 +13,7 @@ This is a MySQL database build specifically for the independent coffee shops. Th
 - VS code
 
 ## Presentation
-> available at mt YouTbe channel [Presentation](https://youtu.be/JTrJInBJDvg)
+[Presentation](https://youtu.be/JTrJInBJDvg) is available at mt YouTbe channel.
 
 ## Special Thanks
 
