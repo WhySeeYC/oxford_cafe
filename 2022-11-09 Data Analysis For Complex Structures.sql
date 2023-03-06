@@ -85,14 +85,14 @@ FROM
 
 
 -- UNION --
-# 2 set of query
+-- 2 set of query
 SELECT * FROM Table1_fruit_basket t1
 LEFT JOIN Table2_fruit_basket t2 ON t1.ID = t2.ID
 UNION
 SELECT * FROM Table1_fruit_basket t1
 RIGHT JOIN Table2_fruit_basket t2 ON t1.ID = t2.ID;
 
-# this way the table will not be separate out side-by-side
+-- this way the table will not be separate out side-by-side
 SELECT * FROM Table1_fruit_basket t1
 UNION
 SELECT * FROM Table2_fruit_basket t2;
@@ -206,8 +206,8 @@ WHERE Project.City NOT IN
 
 
 
-# 4. Find the supplier name, part name and project name for each case where a supplier supplies 
-# a project with a part, but also the supplier city, project city and part city are the same.
+-- 4. Find the supplier name, part name and project name for each case where a supplier supplies 
+-- a project with a part, but also the supplier city, project city and part city are the same.
 -- 3 tables to join: Supplier(SNMAE), Part(PNMAE), Project(JNAME). The Primary key of these three table are in Supply table--
 Use Parts;
 
@@ -221,8 +221,8 @@ FROM Supplier, Part, Project
 WHERE (Supplier.City = Part.CITY) AND (Part.CITY = Project.City) AND (Supplier.City = Project.City)
 ORDER BY Project.City;
 
-# not sure how to verify this query's result
-# Faridat's code
+-- not sure how to verify this query's result
+-- Faridat's code
 select *
 from Supply spy 
 inner join
