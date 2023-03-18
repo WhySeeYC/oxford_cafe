@@ -120,7 +120,7 @@ CREATE OR REPLACE VIEW vw_staff_common AS
 
 SELECT * from practice.vw_staff_common;
 
-
+-- When updated values in actual database, the view will be updated as well
 -- vw_staff_common is a simple view, so it is possible to update it
 
 -- Let's insert a row into the staff table through the vw_staff_common view.
@@ -303,7 +303,7 @@ BEGIN
         SET customer_status = 'NO';
     END IF;
     RETURN (customer_status);
-END//balance
+END// 
 DELIMITER ;
 
 USE bank;
@@ -320,7 +320,8 @@ SELECT customer_status ---Error: ER_BAD_FIELD_ERROR: Unknown column 'customer_st
 FROM accounts;
 
 
-
+-- User define function perfrom single calculation, it returns single value
+-- Stored procedure executes multiple statements, it can return multiple outputs or no output
 
 
 

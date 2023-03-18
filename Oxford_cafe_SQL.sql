@@ -453,7 +453,7 @@ CREATE TRIGGER add_new_shop
 BEFORE INSERT ON coffee_shops
 FOR EACH ROW
 BEGIN
-	SET NEW.shop_id = CONCAT("C",(SUBSTRING(New.shop_id from 2) + 0.1));
+	SET NEW.shop_id = CONCAT("S",(SUBSTRING(New.shop_id from 2) + 0.1));
 END//
 DELIMITER ; 
 
@@ -466,7 +466,12 @@ coffee_shops(shop_id, shop_name, street, travel_mug_discount)
 VALUES
 ("S12", "Ricks", "High", 0);
 
+USE oxford_cafe;
 SELECT shop_id, shop_name, street, travel_mug_discount
 FROM coffee_shops;
 
+USE oxford_cafe;
 SHOW TRIGGERs; -- this will print out the triggers had set associated with a given table
+
+USE oxford_cafe;
+DROP TRIGGER add_new_shop;
